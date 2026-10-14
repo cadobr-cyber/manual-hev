@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7f6">
+  <title>Manual de Identidade Visual | Hospital Edmundo Vasconcelos</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #183b3c;
+      background: #f4f7f6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    main {
+      width: min(100%, 620px);
+      padding: clamp(32px, 7vw, 64px);
+      text-align: center;
+      background: #fff;
+      border: 1px solid #e1e9e6;
+      border-radius: 16px;
+      box-shadow: 0 18px 48px rgb(24 59 60 / 8%);
+    }
+
+    .hospital-logo {
+      display: block;
+      width: min(100%, 340px);
+      height: auto;
+      margin: 0 auto 36px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #183b3c;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.12;
+    }
+
+    .description {
+      max-width: 440px;
+      margin: 20px auto 32px;
+      color: #526664;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .download-link {
+      display: inline-block;
+      max-width: 100%;
+      padding: 15px 24px;
+      border-radius: 8px;
+      background: #4f3aaf;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.4;
+      text-decoration: none;
+      transition: background-color 160ms ease, transform 160ms ease;
+    }
+
+    .download-link:hover {
+      transform: translateY(-1px);
+      background: #3f2e8c;
+    }
+
+    .download-link:focus-visible {
+      outline: 3px solid #a99cde;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 420px) {
+      body {
+        padding: 16px;
+      }
+
+      main {
+        padding: 36px 24px;
+      }
+
+      .hospital-logo {
+        margin-bottom: 28px;
+      }
+
+      .download-link {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .download-link {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="hospital-logo" src="./imagem/Logo_alta_RGB.jpg" alt="Hospital Edmundo Vasconcelos">
+    <h1>Manual de Identidade Visual</h1>
+    <p class="description">Baixe o manual e consulte as orientações para a aplicação correta da nossa marca.</p>
+    <a class="download-link" href="./arquivos/manual-identidade-visual.pdf" download>
+      Baixar manual em PDF
+    </a>
+  </main>
+</body>
+</html>
